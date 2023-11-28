@@ -1,0 +1,14 @@
+public class beispiel
+{
+	public static void main(String args[])
+	{
+		dackel Waldi = new dackel();
+		dackel hundi = new dackel();
+		Waldi.bellen();
+		Waldi.setAlter(4);
+		System.out.println(Waldi.getAlter());
+		hundi.bellen();
+		hundi.Alter=10;
+		System.out.println(hundi.Alter);
+	}
+}

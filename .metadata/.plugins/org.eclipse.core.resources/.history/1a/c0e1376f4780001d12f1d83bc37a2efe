@@ -1,0 +1,57 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Ratespiel extends JFrame implements ActionListener
+{
+   int counter = 0;
+   
+   JLabel inLabel     = new JLabel( "Ihr Versuch Hier:  " ) ;
+   JTextField inText  = new JTextField( 15 );
+
+   JLabel outLabel    = new JLabel( "Es war:" ) ;
+   JTextField outText = new JTextField( 15 );
+
+   public Ratespiel( String titel )      // Konstruktor
+   {
+      super( titel );
+      setLayout( new FlowLayout() );
+      outText.setEditable( false );
+      add( inLabel  ) ;
+      add( inText   ) ;
+      add( outLabel ) ;
+      add( outText  ) ;
+
+      inText.addActionListener( this );
+      setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+   }
+
+  public void actionPerformed( ActionEvent evt)
+  {
+    String eingabe = inText.getText();
+    
+    if (eingabe.equals("Schule")) {
+    	outText.setText( "korrekt" );
+    
+    }
+    else {
+    	outText.setText( "falsch" );
+    	counter++;
+    }
+    
+    repaint();
+    
+    if(counter==3) {
+    	System.exit(0);
+    	counter=0;
+    }
+  }
+
+  public static void main ( String[] args )
+  {
+    Ratespiel echo  = new Ratespiel( "Wiederholer" ) ;
+
+    echo.setSize( 400, 100 );
+    echo.setVisible( true );
+  }
+}
