@@ -73,3 +73,6 @@ local.properties
 *.log
 *.ini
 *.plugins/*
+.metadata/version.ini
+.metadata/.log
+*.prefs
