@@ -76,3 +76,7 @@ local.properties
 .metadata/version.ini
 .metadata/.log
 *.prefs
+*.resources
+*.prefs
+*.xmi
+*.log
