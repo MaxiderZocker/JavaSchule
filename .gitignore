@@ -68,15 +68,3 @@ local.properties
 .sts4-cache/
 
 # End of https://www.toptal.com/developers/gitignore/api/eclipse
-
-*.lock
-*.log
-*.ini
-*.plugins/*
-.metadata/version.ini
-.metadata/.log
-*.prefs
-*.resources
-*.prefs
-*.xmi
-*.log
