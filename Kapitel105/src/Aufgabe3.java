@@ -1,6 +1,6 @@
 import java.io.*;
 
-class ReadIntEOF {
+class Aufgabe3 {
     public static void main(String[] args) {
         String fileName = "ints.dat";
         long sum = 0;
