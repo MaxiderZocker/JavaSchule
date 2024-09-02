@@ -3,7 +3,7 @@ import java.io.*;
 public class Aufgabe1 {
     public static void main(String[] args) {
 
-    	String newFile = args[args.length - 1];
+    	String newFile = args[args.length - 1];			//finding name for "New File"
 
         // Check if newFile already exists
         File newOutputFile = new File(newFile);
